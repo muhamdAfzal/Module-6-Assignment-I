@@ -1,0 +1,107 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+button {
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.4rem;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(128, 214, 112, 0.8),
+    rgba(40, 180, 133, 0.8)
+  );
+}
+.form-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background: #ffff;
+  border-radius: 20px;
+  padding: 2.8rem 4rem;
+}
+
+.form-card h1 {
+  display: flex;
+  margin: auto;
+  margin-bottom: 2.8rem;
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+.div-form {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.div-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.div-label label {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.div-label input {
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  border-radius: 7px;
+  border-color: #a0a0a0;
+}
+
+.div-gender {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.div-gender label {
+  font-size: 2rem;
+  margin-bottom: 0.35rem;
+}
+
+.gender-selection {
+  font-size: 1.7rem;
+}
+
+.gender-selection input[type="radio"] {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+
+.btn-cancel {
+  background: #ff885b;
+}
+
+.btn-submit {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(128, 214, 112, 0.8),
+    rgba(40, 180, 133, 0.8)
+  );
+}

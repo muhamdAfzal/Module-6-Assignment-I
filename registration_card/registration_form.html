@@ -4,6 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="form-card">
+        <h1>Registration</h1>
+        <div>
+          <div class="div-form">
+            <div class="div-label">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="div-label">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                placeholder="Enter your username"
+                name="username"
+                required
+              />
+            </div>
+          </div>
+          <div class="div-form">
+            <div class="div-label">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                placeholder="Enter your email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="div-label">
+              <label for="phone">Phone Number</label>
+              <input
+                type="number"
+                placeholder="Enter your number"
+                name="phone"
+                required
+              />
+            </div>
+          </div>
+          <div class="div-form">
+            <div class="div-label">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                placeholder="Enter your password"
+                name="password"
+                required
+              />
+            </div>
+            <div class="div-label">
+              <label for="confirm_password">Confirm Password</label>
+              <input
+                type="password"
+                placeholder="Confirm your password"
+                name="confirm_password"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="div-gender">
+          <label for="gender">Gender</label>
+          <div class="gender-selection">
+            <input type="radio" value="Male" name="gender" />
+            Male
+            <input type="radio" value="Female" name="gender" /> Female
+            <input type="radio" value="Other" name="gender" /> Other
+          </div>
+        </div>
+        <div class="btn-group">
+          <button type="cancel" class="btn-cancel">Cancel</button>
+          <button type="submit" class="btn-submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
