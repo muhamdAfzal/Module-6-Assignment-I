@@ -52,11 +52,15 @@ function studentMarks($marks)
 
     case $averageMark >= 33:
       $grade = 'D';
+      break;
+
+    case $averageMark < 33:
+      $grade = 'F';
   };
 
 
   //___ Returning Final Result Output
-  $output = ($grade == 'F') ? "Student Failed" : "Total Marks: $totalMarks </br > Average Mark: $averageMark </br > Grade: $grade";
+  $output = ($grade == 'F') ? "Student Failed!" : "Total Marks: $totalMarks </br > Average Mark: $averageMark </br > Grade: $grade";
 
   return $output;
 };
@@ -66,7 +70,7 @@ function studentMarks($marks)
 echo studentMarks([51, 99, 88, 73, -19]);
 echo "</br >";
 
-echo studentMarks([38, 35, 17, 34, 50]);
+echo studentMarks([38, 35, 17, 54, 50]);
 echo "</br >";
 
-echo studentMarks([90, 44, 90, 65, 39]);
+echo studentMarks([90, 44, 70, 65, 39]);
